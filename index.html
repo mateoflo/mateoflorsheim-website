@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mateo Florsheim — Finance & Data Science</title>
+  <meta name="description" content="Mateo Florsheim — Finance & Data Science student at Northeastern University, quantitative trader, and student pilot." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ─────────────── NAV ─────────────── -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">MF</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#leadership">Leadership</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" class="mob-link">About</a>
+    <a href="#experience" class="mob-link">Experience</a>
+    <a href="#education" class="mob-link">Education</a>
+    <a href="#skills" class="mob-link">Skills</a>
+    <a href="#leadership" class="mob-link">Leadership</a>
+    <a href="#contact" class="mob-link">Contact</a>
+  </div>
+
+  <!-- ─────────────── HERO ─────────────── -->
+  <section id="hero">
+    <canvas id="particleCanvas"></canvas>
+    <div class="hero-inner">
+      <div class="hero-photo-wrap fade-in-up">
+        <div class="hero-photo-ring">
+          <img src="images/profile.jpg" alt="Mateo Florsheim at NVIDIA" class="hero-photo" id="heroPhoto" />
+          <div class="hero-photo-placeholder" id="heroPlaceholder">
+            <i class="fa-solid fa-user"></i>
+          </div>
+        </div>
+        <div class="hero-badge">
+          <i class="fa-solid fa-chart-line"></i>
+          <span>Quant Trader</span>
+        </div>
+      </div>
+
+      <div class="hero-text fade-in-up delay-1">
+        <p class="hero-eyebrow">Hello, I'm</p>
+        <h1 class="hero-name">Mateo<br /><span class="gradient-text">Florsheim</span></h1>
+        <div class="hero-typewriter">
+          <span id="typewriter"></span><span class="cursor">|</span>
+        </div>
+        <p class="hero-sub">
+          Finance &amp; Data Science student at <strong>Northeastern University</strong> ·
+          Quantitative trader since 2019 · Student pilot ·
+          Passionate about markets, machine learning, and building the future.
+        </p>
+        <div class="hero-ctas">
+          <a href="#experience" class="btn btn-primary">
+            <i class="fa-solid fa-briefcase"></i> View Experience
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <i class="fa-solid fa-envelope"></i> Get In Touch
+          </a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://www.linkedin.com/in/mateoflorsheim/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/mateoflo" target="_blank" rel="noopener" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="mailto:florsheim.m@northeastern.edu" aria-label="Email">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-down" aria-label="Scroll down">
+      <i class="fa-solid fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- ─────────────── ABOUT ─────────────── -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">About Me</span>
+        <h2>A Brief Introduction</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            I'm Mateo Florsheim, a freshman at <strong>Northeastern University Oakland</strong> studying
+            Business Administration and Data Science with a concentration in Finance. I've been
+            actively managing my personal portfolio and building quantitative trading systems since 2019.
+          </p>
+          <p>
+            My work sits at the intersection of <strong>finance, data science, and technology</strong>.
+            I build Python-based trading models, research machine learning applications in markets,
+            and advise individual investors — all while pursuing a Private Pilot's License on the side.
+          </p>
+          <p>
+            I thrive on connecting with leaders in finance and tech, and I'm always looking for
+            opportunities to contribute, learn, and grow.
+          </p>
+          <div class="about-tags">
+            <span class="tag"><i class="fa-solid fa-chart-candlestick"></i> Quantitative Trading</span>
+            <span class="tag"><i class="fa-solid fa-brain"></i> Machine Learning</span>
+            <span class="tag"><i class="fa-solid fa-plane"></i> Aviation</span>
+            <span class="tag"><i class="fa-solid fa-golf-ball-tee"></i> Golf</span>
+            <span class="tag"><i class="fa-solid fa-globe"></i> Bilingual (Spanish)</span>
+          </div>
+        </div>
+        <div class="about-stats reveal delay-1">
+          <div class="stat-card">
+            <span class="stat-num" data-count="6">0</span>
+            <span class="stat-label">Years Trading</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num" data-count="3">0</span>
+            <span class="stat-label">Clubs &amp; Societies</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num" data-count="4">0</span>
+            <span class="stat-label">Certifications</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num" data-count="10">0</span>
+            <span class="stat-label">Volunteers Led</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────── EXPERIENCE ─────────────── -->
+  <section id="experience" class="section section-dark">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Work & Projects</span>
+        <h2>Experience</h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot">
+            <i class="fa-solid fa-chart-line"></i>
+          </div>
+          <div class="timeline-card">
+            <div class="tc-header">
+              <div>
+                <h3>Personal Portfolio Management &amp; Strategy Development</h3>
+                <p class="tc-role">Independent Quantitative Trader</p>
+              </div>
+              <span class="tc-date">2019 — Present</span>
+            </div>
+            <ul class="tc-bullets">
+              <li>Conduct equities and indices research using fundamental and technical analysis to identify mispriced assets, implementing risk management strategies aligned with long-term goals.</li>
+              <li>Developed and tested trading strategies focused on mean reversion and momentum, improving decision-making and risk control.</li>
+              <li>Building Python-based trading models to automate signal generation and enhance execution efficiency, leveraging AI tools like Codex.</li>
+              <li>Advising individual investors on portfolio positioning and market opportunities, contributing to more informed investment decisions.</li>
+            </ul>
+            <div class="tc-tags">
+              <span>Python</span><span>Mean Reversion</span><span>Momentum</span><span>Risk Management</span><span>IBKR</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal delay-1">
+          <div class="timeline-dot">
+            <i class="fa-solid fa-flask"></i>
+          </div>
+          <div class="timeline-card">
+            <div class="tc-header">
+              <div>
+                <h3>Archimedes Club</h3>
+                <p class="tc-role">Research Assistant · Oakland, CA</p>
+              </div>
+              <span class="tc-date">Oct 2025 — Present</span>
+            </div>
+            <ul class="tc-bullets">
+              <li>Researching applications of machine learning and neural networks in financial markets to improve predictive modeling of asset prices.</li>
+              <li>Developed and evaluated trading strategies (Forex Arbitrage) using data-driven analysis to assess feasibility and potential profitability.</li>
+            </ul>
+            <div class="tc-tags">
+              <span>Neural Networks</span><span>Forex Arbitrage</span><span>ML Research</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal delay-2">
+          <div class="timeline-dot">
+            <i class="fa-solid fa-square-root-variable"></i>
+          </div>
+          <div class="timeline-card">
+            <div class="tc-header">
+              <div>
+                <h3>Mu Alpha Theta</h3>
+                <p class="tc-role">Mathematics Tutor · Stockton, CA</p>
+              </div>
+              <span class="tc-date">Jun 2023 — May 2025</span>
+            </div>
+            <ul class="tc-bullets">
+              <li>Delivered 1-on-1 and group tutoring in mathematics, improving student comprehension and problem-solving abilities.</li>
+              <li>Increased student accessibility by attending additional sessions beyond requirements, demonstrating initiative and commitment.</li>
+            </ul>
+            <div class="tc-tags">
+              <span>Mathematics</span><span>Tutoring</span><span>Leadership</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal delay-3">
+          <div class="timeline-dot">
+            <i class="fa-solid fa-car-wash"></i>
+          </div>
+          <div class="timeline-card">
+            <div class="tc-header">
+              <div>
+                <h3>Zoom Car Wash</h3>
+                <p class="tc-role">Attendant · Stockton, CA</p>
+              </div>
+              <span class="tc-date">Jun 2024 — Aug 2024</span>
+            </div>
+            <ul class="tc-bullets">
+              <li>Delivered detailing services in a fast-paced environment, ensuring customer satisfaction and repeat business.</li>
+              <li>Strengthened client-facing and operational efficiency skills while maintaining care and protection of customer assets.</li>
+            </ul>
+            <div class="tc-tags">
+              <span>Customer Service</span><span>Operations</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────── EDUCATION ─────────────── -->
+  <section id="education" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Academic Background</span>
+        <h2>Education</h2>
+      </div>
+      <div class="edu-grid">
+
+        <div class="edu-card reveal">
+          <div class="edu-icon">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <div class="edu-body">
+            <div class="edu-header">
+              <div>
+                <h3>Northeastern University</h3>
+                <p class="edu-degree">B.S. Business Administration &amp; Data Science</p>
+                <p class="edu-focus">Concentration in Finance</p>
+              </div>
+              <div class="edu-meta">
+                <span class="edu-location"><i class="fa-solid fa-location-dot"></i> Oakland, CA</span>
+                <span class="edu-date">Expected 2029</span>
+              </div>
+            </div>
+            <div class="edu-details">
+              <div class="edu-section">
+                <strong>Relevant Coursework</strong>
+                <div class="edu-tags">
+                  <span>Accounting</span>
+                  <span>Discrete Structures</span>
+                  <span>Financial Management</span>
+                  <span>Business Statistics</span>
+                </div>
+              </div>
+              <div class="edu-section">
+                <strong>Extracurriculars</strong>
+                <div class="edu-tags">
+                  <span><i class="fa-solid fa-building-columns"></i> NU Private Equity/VC Club</span>
+                  <span><i class="fa-solid fa-chart-bar"></i> Investment &amp; Trading Society</span>
+                  <span><i class="fa-solid fa-compass-drafting"></i> Archimedes Club</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="edu-card reveal delay-1">
+          <div class="edu-icon edu-icon-alt">
+            <i class="fa-solid fa-plane-up"></i>
+          </div>
+          <div class="edu-body">
+            <div class="edu-header">
+              <div>
+                <h3>Flight Dogs</h3>
+                <p class="edu-degree">Student Pilot</p>
+                <p class="edu-focus">FAA Part 61 · Private Pilot's License (In Progress)</p>
+              </div>
+              <div class="edu-meta">
+                <span class="edu-location"><i class="fa-solid fa-location-dot"></i> Stockton/Hayward, CA</span>
+                <span class="edu-date">Jul 2025 — Present</span>
+              </div>
+            </div>
+            <div class="edu-details">
+              <div class="edu-section">
+                <strong>Highlights</strong>
+                <div class="edu-tags">
+                  <span>FAA Class 1 Medical</span>
+                  <span>Student Pilot Certificate</span>
+                  <span>Sporty's Ground School</span>
+                  <span>Cross-Country Training</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────── SKILLS ─────────────── -->
+  <section id="skills" class="section section-dark">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Technical & Professional</span>
+        <h2>Skills &amp; Certifications</h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-block reveal">
+          <h4><i class="fa-solid fa-code"></i> Technical Skills</h4>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>Python</span><span>Intermediate</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="60"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>Java</span><span>Intermediate</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="65"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>Microsoft Office</span><span>Advanced</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>Hetzner / Google Cloud</span><span>Beginner</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="35"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-block reveal delay-1">
+          <h4><i class="fa-solid fa-certificate"></i> Certifications</h4>
+          <div class="cert-list">
+            <div class="cert-item">
+              <i class="fa-solid fa-building-columns"></i>
+              <span>Goldman Sachs Controllers Job Simulation — Forage</span>
+            </div>
+            <div class="cert-item">
+              <i class="fa-solid fa-heart-pulse"></i>
+              <span>CPR / First Aid Certified</span>
+            </div>
+            <div class="cert-item">
+              <i class="fa-solid fa-plane"></i>
+              <span>FAA Class 1 Medical Certificate</span>
+            </div>
+            <div class="cert-item">
+              <i class="fa-solid fa-id-card"></i>
+              <span>FAA Student Pilot Certificate</span>
+            </div>
+            <div class="cert-item">
+              <i class="fa-solid fa-language"></i>
+              <span>San Joaquin County Seal of Biliteracy — Spanish</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-block reveal delay-2">
+          <h4><i class="fa-solid fa-globe"></i> Languages</h4>
+          <div class="lang-list">
+            <div class="lang-item">
+              <span class="lang-flag">🇺🇸</span>
+              <div>
+                <strong>English</strong>
+                <p>Native</p>
+              </div>
+              <div class="lang-dots">
+                <span class="dot filled"></span><span class="dot filled"></span>
+                <span class="dot filled"></span><span class="dot filled"></span>
+                <span class="dot filled"></span>
+              </div>
+            </div>
+            <div class="lang-item">
+              <span class="lang-flag">🇪🇸</span>
+              <div>
+                <strong>Spanish</strong>
+                <p>Conversational · Biliteracy Seal</p>
+              </div>
+              <div class="lang-dots">
+                <span class="dot filled"></span><span class="dot filled"></span>
+                <span class="dot filled"></span><span class="dot filled"></span>
+                <span class="dot"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-block reveal delay-3">
+          <h4><i class="fa-solid fa-star"></i> Interests</h4>
+          <div class="interest-grid">
+            <div class="interest-item">
+              <i class="fa-solid fa-golf-ball-tee"></i>
+              <span>Golf</span>
+            </div>
+            <div class="interest-item">
+              <i class="fa-solid fa-plane-up"></i>
+              <span>Aviation</span>
+            </div>
+            <div class="interest-item">
+              <i class="fa-solid fa-chart-line"></i>
+              <span>Quantitative Finance</span>
+            </div>
+            <div class="interest-item">
+              <i class="fa-solid fa-robot"></i>
+              <span>AI &amp; ML</span>
+            </div>
+            <div class="interest-item">
+              <i class="fa-solid fa-handshake"></i>
+              <span>Networking</span>
+            </div>
+            <div class="interest-item">
+              <i class="fa-solid fa-microchip"></i>
+              <span>Tech Industry</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────── LEADERSHIP ─────────────── -->
+  <section id="leadership" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Community Impact</span>
+        <h2>Leadership &amp; Volunteering</h2>
+      </div>
+      <div class="leadership-grid">
+
+        <div class="lead-card reveal">
+          <div class="lead-card-top">
+            <div class="lead-icon">
+              <i class="fa-solid fa-child-reaching"></i>
+            </div>
+            <div>
+              <h3>Children's Museum of Stockton</h3>
+              <p class="lead-role">Lead Volunteer</p>
+              <p class="lead-meta"><i class="fa-solid fa-location-dot"></i> Stockton, CA &nbsp;·&nbsp; <i class="fa-regular fa-calendar"></i> Nov 2021 – Aug 2025</p>
+            </div>
+          </div>
+          <ul class="lead-bullets">
+            <li>Led and trained teams of up to <strong>10 volunteers</strong>, improving coordination and execution of community events.</li>
+            <li>Managed inventory and transactions in a retail environment, ensuring operational efficiency.</li>
+            <li>Co-developed new programming initiatives (Dance Time, Reading Time, Outdoor Time) to increase engagement and attendance.</li>
+            <li>Recognized by superiors and board members; featured on the museum's volunteering website cover for a period.</li>
+          </ul>
+        </div>
+
+        <div class="lead-card reveal delay-1">
+          <div class="lead-card-top">
+            <div class="lead-icon lead-icon-alt">
+              <i class="fa-solid fa-campground"></i>
+            </div>
+            <div>
+              <h3>Quail Lakes Baptist Church</h3>
+              <p class="lead-role">Camp Counselor in Training</p>
+              <p class="lead-meta"><i class="fa-solid fa-location-dot"></i> Stockton, CA &nbsp;·&nbsp; <i class="fa-regular fa-calendar"></i> Summers 2022 &amp; 2023</p>
+            </div>
+          </div>
+          <ul class="lead-bullets">
+            <li>Co-led a group of 8–10 elementary-aged students weekly.</li>
+            <li>Supervised students at 3 off-campus field trips per week.</li>
+            <li>Assisted in creation, setup, operation, and cleanup of campus activities, meals, and technology support.</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────── CONTACT ─────────────── -->
+  <section id="contact" class="section section-dark">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Let's Connect</span>
+        <h2>Get In Touch</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-text reveal">
+          <p>
+            I'm always interested in new opportunities, conversations about markets,
+            quantitative strategies, or anything at the intersection of finance and technology.
+            Reach out — I'd love to connect.
+          </p>
+          <div class="contact-links">
+            <a href="mailto:florsheim.m@northeastern.edu" class="contact-link">
+              <div class="cl-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <strong>Email</strong>
+                <span>florsheim.m@northeastern.edu</span>
+              </div>
+            </a>
+            <a href="tel:2096390923" class="contact-link">
+              <div class="cl-icon"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <strong>Phone</strong>
+                <span>(209) 639-0923</span>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/mateoflorsheim/" target="_blank" rel="noopener" class="contact-link">
+              <div class="cl-icon"><i class="fa-brands fa-linkedin"></i></div>
+              <div>
+                <strong>LinkedIn</strong>
+                <span>linkedin.com/in/mateoflorsheim</span>
+              </div>
+            </a>
+            <a href="https://github.com/mateoflo" target="_blank" rel="noopener" class="contact-link">
+              <div class="cl-icon"><i class="fa-brands fa-github"></i></div>
+              <div>
+                <strong>GitHub</strong>
+                <span>github.com/mateoflo</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="contact-card reveal delay-1">
+          <div class="cc-inner">
+            <div class="cc-photo-wrap">
+              <img src="images/profile.jpg" alt="Mateo Florsheim" class="cc-photo" id="ccPhoto" />
+              <div class="cc-photo-placeholder" id="ccPlaceholder">
+                <i class="fa-solid fa-user"></i>
+              </div>
+            </div>
+            <h3>Mateo Florsheim</h3>
+            <p>Finance &amp; Data Science · Northeastern University '29</p>
+            <div class="cc-badges">
+              <span><i class="fa-solid fa-chart-line"></i> Quant Trader</span>
+              <span><i class="fa-solid fa-plane"></i> Student Pilot</span>
+              <span><i class="fa-solid fa-brain"></i> ML Researcher</span>
+            </div>
+            <a href="mailto:florsheim.m@northeastern.edu" class="btn btn-primary btn-full">
+              <i class="fa-solid fa-paper-plane"></i> Send a Message
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────── FOOTER ─────────────── -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-left">
+          <span class="footer-logo">MF</span>
+          <p>Mateo Florsheim &copy; <span id="year"></span></p>
+        </div>
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/in/mateoflorsheim/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/mateoflo" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="mailto:florsheim.m@northeastern.edu" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
