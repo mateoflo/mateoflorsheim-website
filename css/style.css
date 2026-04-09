@@ -197,9 +197,11 @@ button { cursor: pointer; border: none; background: none; }
 ═══════════════════════ */
 #hero {
   position: relative;
-  min-height: 100vh;
+  height: 100vh;
+  min-height: 700px;
   display: flex;
   align-items: center;
+  justify-content: center;
   overflow: hidden;
   background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(212,168,67,0.08) 0%, transparent 70%),
               radial-gradient(ellipse 60% 50% at 80% 80%, rgba(79,142,247,0.06) 0%, transparent 70%),
@@ -214,12 +216,13 @@ button { cursor: pointer; border: none; background: none; }
 .hero-inner {
   position: relative;
   z-index: 2;
-  max-width: 1180px;
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 120px 24px 80px;
+  padding: 80px 48px 60px;
   display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 80px;
+  grid-template-columns: 400px 1fr;
+  gap: 72px;
   align-items: center;
 }
 /* Photo */
@@ -228,7 +231,7 @@ button { cursor: pointer; border: none; background: none; }
   flex-shrink: 0;
 }
 .hero-photo-ring {
-  width: 280px; height: 280px;
+  width: 380px; height: 380px;
   border-radius: 50%;
   background: linear-gradient(135deg, var(--gold), var(--blue));
   padding: 4px;
@@ -978,7 +981,7 @@ button { cursor: pointer; border: none; background: none; }
     justify-items: center;
     text-align: center;
     gap: 40px;
-    padding-top: 100px;
+    padding: 100px 24px 60px;
   }
   .hero-sub { margin: 0 auto 32px; }
   .hero-ctas { justify-content: center; }
@@ -993,7 +996,7 @@ button { cursor: pointer; border: none; background: none; }
   .nav-links { display: none; }
   .hamburger { display: flex; }
   .section { padding: 72px 0; }
-  .hero-photo-ring { width: 200px; height: 200px; }
+  .hero-photo-ring { width: 240px; height: 240px; }
   .hero-name { font-size: 2.6rem; }
   .edu-grid { grid-template-columns: 1fr; }
   .leadership-grid { grid-template-columns: 1fr; }
