@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /images/
+
+Sitemap: https://mateoflorsheim.me/sitemap.xml
+
+# Crawl delay (in seconds) - gives servers breathing room
+Crawl-delay: 1
