@@ -20,7 +20,7 @@ document.querySelectorAll('.mob-link').forEach(link => {
 
 /* ── Typewriter ── */
 const phrases = [
-  'Quantitative Researching since 2020',
+  'Quantitative Researcher since 2020',
   'Finance & Data Science Student',
   'Student Pilot (PPL in Progress)',
   'ML Researcher',
