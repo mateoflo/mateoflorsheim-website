@@ -1012,6 +1012,11 @@ button { cursor: pointer; border: none; background: none; }
   border-radius: 50px;
   color: var(--text-dim);
 }
+.project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
 .project-link {
   display: inline-flex;
   align-items: center;
@@ -1029,6 +1034,15 @@ button { cursor: pointer; border: none; background: none; }
   background: var(--gold);
   color: #07090f;
   transform: translateX(4px);
+}
+.project-link-alt {
+  background: var(--blue-dim);
+  border-color: var(--blue);
+  color: var(--blue);
+}
+.project-link-alt:hover {
+  background: var(--blue);
+  color: #eef1f8;
 }
 
 /* ═══════════════════════
