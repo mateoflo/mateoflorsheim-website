@@ -146,53 +146,6 @@ window.addEventListener('scroll', () => {
 /* ── Footer year ── */
 document.getElementById('year').textContent = new Date().getFullYear();
 
-/* ── Particle canvas ── */
-(function initParticles() {
-  const canvas = document.getElementById('particleCanvas');
-  if (!canvas) return;
-  const ctx = canvas.getContext('2d');
-  let W, H, particles = [];
-
-  function resize() {
-    W = canvas.width = window.innerWidth;
-    H = canvas.height = window.innerHeight;
-  }
-  resize();
-  window.addEventListener('resize', resize);
-
-  class Particle {
-    constructor() { this.reset(true); }
-    reset(init) {
-      this.x = Math.random() * W;
-      this.y = init ? Math.random() * H : H + 10;
-      this.r = Math.random() * 1.5 + 0.3;
-      this.speed = Math.random() * 0.4 + 0.1;
-      this.alpha = Math.random() * 0.5 + 0.1;
-      this.color = Math.random() > 0.5
-        ? `rgba(212,168,67,${this.alpha})`
-        : `rgba(79,142,247,${this.alpha})`;
-    }
-    update() {
-      this.y -= this.speed;
-      if (this.y < -10) this.reset(false);
-    }
-    draw() {
-      ctx.beginPath();
-      ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2);
-      ctx.fillStyle = this.color;
-      ctx.fill();
-    }
-  }
-
-  for (let i = 0; i < 90; i++) particles.push(new Particle());
-
-  function animate() {
-    ctx.clearRect(0, 0, W, H);
-    particles.forEach(p => { p.update(); p.draw(); });
-    requestAnimationFrame(animate);
-  }
-  animate();
-})();
 
 /* ── Smooth scroll for all anchor links ── */
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
