@@ -24,7 +24,7 @@ const phrases = [
   'Finance & Data Science Student',
   'Student Pilot (PPL in Progress)',
   'ML Researcher',
-  'Northeastern University \'29',
+  'Purdue University \'29',
   'Market Researcher',
 ];
 let phraseIdx = 0, charIdx = 0, deleting = false;
