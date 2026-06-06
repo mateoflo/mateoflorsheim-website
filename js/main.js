@@ -21,7 +21,7 @@ document.querySelectorAll('.mob-link').forEach(link => {
 /* ── Typewriter ── */
 const phrases = [
   'Quantitative Researcher since 2020',
-  'Finance & Data Science Student',
+  'Finance & Aviation Student',
   'Student Pilot (PPL in Progress)',
   'ML Researcher',
   'Purdue University \'29',
