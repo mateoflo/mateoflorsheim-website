@@ -22,7 +22,7 @@ document.querySelectorAll('.mob-link').forEach(link => {
 const phrases = [
   'Quantitative Researcher since 2020',
   'Finance & Aviation Student',
-  'Student Pilot (PPL in Progress)',
+  'Private Pilot',
   'ML Researcher',
   'Purdue University \'29',
   'Market Researcher',
